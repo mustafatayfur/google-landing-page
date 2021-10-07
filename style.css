@@ -5,6 +5,13 @@
                 font-family: 'Roboto', sans-serif;
                 font-weight: 600;
                 font-size: 15px;
+                box-shadow: border-box;
+                text-decoration: none;
+            }
+            
+            body {
+                width: 100%;
+                overflow-x: scroll;
             }
             
             #header {
@@ -18,12 +25,8 @@
                 margin: 5px;
             }
             
-            #header li a {
-                text-decoration: none;
-            }
-            
-            #header li a:hover {
-                text-decoration: unset;
+            a:hover {
+                text-decoration: underline;
             }
             
             #header__left ul {
@@ -95,11 +98,12 @@
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
-                margin: 300px;
+                margin: 150px;
             }
             
             #main__logo {
                 width: 350px;
+                margin: 200px auto 0;
             }
             
             #main div {
@@ -174,5 +178,49 @@
             }
             
             #text p a {
-                color: blue
+                color: blue;
+                text-decoration: underline;
+            }
+            
+            .footer {
+                bottom: 0;
+                position: fixed;
+                background-color: #F2F2F2;
+                line-height: 40px;
+                width: 100%;
+                color: #5F6368;
+            }
+            
+            .footer__country {
+                padding-left: 28px;
+                font-size: 14px;
+            }
+            
+            .footer__bottom {
+                border-top: 1px solid #DADCE0;
+                list-style-type: none;
+                margin: 0 10px;
+            }
+            
+            .footer__bottom--left {
+                float: left;
+                padding-left: 18px;
+                list-style-type: none;
+                display: flex;
+                flex-direction: row;
+            }
+            
+            .footer__bottom--left a {
+                margin-right: 50px;
+            }
+            
+            .footer__bottom--right {
+                float: right;
+                list-style-type: none;
+                display: flex;
+                flex-direction: row;
+            }
+            
+            .footer__bottom--right a {
+                margin-left: 50px;
             }
