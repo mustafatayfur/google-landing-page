@@ -1,152 +1,178 @@
-        * {
-            margin: 0;
-            padding: 0;
-            color: #474747;
-            font-family: 'Roboto', sans-serif;
-            font-weight: 600;
-            font-size: 15px;
-        }
-        
-        #header {
-            display: flex;
-            flex-direction: row;
-            position: relative;
-            margin: 10px 20px 10px 20px;
-        }
-        
-        #header li {
-            margin: 5px;
-            text-decoration: none;
-        }
-        
-        #header li a {
-            text-decoration: none;
-        }
-        
-        #header-left ul {
-            display: flex;
-            flex-direction: row;
-            position: absolute;
-            left: 0 px;
-            list-style-type: none;
-        }
-        
-        #header-right {
-            justify-content: right;
-        }
-        
-        #header-right ul {
-            display: flex;
-            flex-direction: row;
-            position: absolute;
-            right: 0px;
-            list-style-type: none;
-        }
-        
-        #header ul li {
-            padding: 8px 0px 12px 15px;
-            width: 70px;
-            height: 15px;
-        }
-        
-        #icon-menu {
-            width: 30px;
-            height: 25px;
-            opacity: 0.6;
-        }
-        
-        .signin {
-            background-color: #1e90ff;
-            color: white;
-            border-radius: 2px;
-            padding: 10px 10px 20px 20px;
-            width: 60px;
-            height: 15px;
-        }
-        
-        #signin {
-            color: white;
-        }
-        
-        #main {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            margin: 300px;
-        }
-        
-        #logo {
-            width: 350px;
-        }
-        
-        #main div {
-            margin: 10px;
-        }
-        
-        #search {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            border: 1px solid #E2E2E2;
-            border-radius: 30px;
-            width: 600px;
-            height: 55px;
-        }
-        
-        #glass {
-            width: 33px;
-            height: 33px;
-            margin: 10px 10px 10px 20px;
-        }
-        
-        #microphone {
-            width: 17px;
-            height: 25px;
-            margin: 15px 20px 15px 15px;
-        }
-        
-        #search input {
-            width: 530px;
-            height: 30px;
-            border: hidden;
-            outline: none;
-        }
-        
-        #feeling {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            list-style-type: none;
-            margin-top: 10px;
-        }
-        
-        #feeling li {
-            width: 150px;
-            height: 40px;
-            margin: 10px;
-            border-radius: 5px;
-            background-color: #E2E2E2;
-        }
-        
-        #feeling li a {
-            text-decoration: none;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            margin: 10px;
-            color: #7C7C7C;
-        }
-        
-        #footer p {
-            width: 350px;
-            height: 40px;
-            padding: 10px;
-            margin-left: 50px;
-        }
-        
-        #footer p a {
-            color: blue
-        }
+            * {
+                margin: 0;
+                padding: 0;
+                color: #474747;
+                font-family: 'Roboto', sans-serif;
+                font-weight: 600;
+                font-size: 15px;
+            }
+            
+            #header {
+                display: flex;
+                flex-direction: row;
+                position: relative;
+                margin: 10px 20px 10px 20px;
+            }
+            
+            #header li {
+                margin: 5px;
+            }
+            
+            #header li a {
+                text-decoration: none;
+            }
+            
+            #header li a:hover {
+                text-decoration: unset;
+            }
+            
+            #header__left ul {
+                display: flex;
+                flex-direction: row;
+                position: absolute;
+                left: 0 px;
+                list-style-type: none;
+            }
+            
+            #header__right {
+                justify-content: right;
+            }
+            
+            #header__right ul {
+                display: flex;
+                flex-direction: row;
+                position: absolute;
+                right: 0px;
+                list-style-type: none;
+            }
+            
+            #header ul li {
+                padding: 8px 0px 12px 15px;
+                width: 70px;
+                height: 15px;
+            }
+            
+            #icon-menu {
+                width: 30px;
+                height: 25px;
+                opacity: 0.6;
+            }
+            
+            #icon-menu:hover {
+                opacity: unset;
+                cursor: pointer;
+            }
+            
+            .signin {
+                background-color: #1e90ff;
+                color: white;
+                border-radius: 2px;
+                padding: 10px 10px 20px 20px;
+                width: 60px;
+                height: 15px;
+            }
+            
+            .signin:hover {
+                color: white;
+                background-color: #1e90ff;
+                border: none;
+                cursor: pointer;
+                box-shadow: 1px 1px 5px rgb(119, 118, 118);
+            }
+            
+            #signin {
+                color: white;
+                background-color: #1e90ff;
+                border: none;
+            }
+            
+            #signin:hover {
+                cursor: pointer;
+            }
+            
+            #main {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin: 300px;
+            }
+            
+            #main__logo {
+                width: 350px;
+            }
+            
+            #main div {
+                margin: 10px;
+            }
+            
+            #main__search-bar {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                border: 1px solid #E2E2E2;
+                border-radius: 30px;
+                width: 600px;
+                height: 55px;
+            }
+            
+            #glass {
+                width: 33px;
+                height: 33px;
+                margin: 10px 10px 10px 20px;
+            }
+            
+            #microphone {
+                width: 17px;
+                height: 25px;
+                margin: 15px 20px 15px 15px;
+            }
+            
+            #main__search-bar input {
+                width: 530px;
+                height: 30px;
+                border: hidden;
+                outline: none;
+            }
+            
+            #main__buttons {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                list-style-type: none;
+                margin-top: 10px;
+            }
+            
+            #main__buttons li {
+                width: 150px;
+                height: 40px;
+                margin: 10px;
+                border-radius: 5px;
+                background-color: #E2E2E2;
+            }
+            
+            #main__buttons li:hover {
+                box-shadow: 1px 1px 5px rgb(119, 118, 118);
+            }
+            
+            #main__buttons li a {
+                text-decoration: none;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                margin: 10px;
+                color: #7C7C7C;
+            }
+            
+            #text p {
+                width: 350px;
+                height: 40px;
+                padding: 10px;
+                margin-left: 50px;
+            }
+            
+            #text p a {
+                color: blue
+            }

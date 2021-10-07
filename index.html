@@ -18,7 +18,7 @@
 
 <body>
     <div id="header">
-        <div id="header-left">
+        <div id="header__left">
             <ul>
                 <li>
                     <a href="#">About</a>
@@ -28,7 +28,7 @@
                 </li>
             </ul>
         </div>
-        <div id="header-right">
+        <div id="header__right">
             <ul>
                 <li>
                     <a href="">Gmail</a>
@@ -38,21 +38,21 @@
                 </li>
                 <li><img id="icon-menu" src="icon-menu.png" alt="menu"></li>
                 <li class="signin">
-                    <a id="signin" href="#">Sign In</a>
+                    <button type="button" id="signin" href="#">Sign In</button>
                 </li>
             </ul>
         </div>
     </div>
     <div id="main">
         <div>
-            <img id="logo" src="googlelogo.png" alt="googletext">
+            <img id="main__logo" src="googlelogo.png" alt="googletext">
         </div>
-        <div id="search">
+        <div id="main__search-bar">
             <img id="glass" src="magnifying_glass.png" alt="magnifying_glass">
             <input type="text">
-            <img id="microphone" src="google_microphone.png" alt="google_microphone">
+            <a href="#"><img id="microphone" src="google_microphone.png" alt="google_microphone"></a>
         </div>
-        <ul id="feeling">
+        <ul id="main__buttons">
             <li>
                 <a href="#">Google Search</a>
             </li>
@@ -60,12 +60,41 @@
                 <a href="#">I'm Feeling Lucky</a>
             </li>
         </ul>
-        <div id="footer">
+        <div id="text">
             <p>
                 Other Languages you can use Google:
                 <a href="#">English</a>
             </p>
         </div>
+    </div>
+    <div id="footer">
+        <div class="footer__country">Turkey</div>
+        <div class="footer__bottom">
+            <ul class="footer__bottom--left">
+                <li>
+                    <a href="">Advertising</a>
+                </li>
+                <li>
+                    <a href="">Business</a>
+                </li>
+                <li>
+                    <a href="">How Search Works</a>
+                </li>
+            </ul>
+            <ul class="footer__bottom--right">
+                <li>
+                    <a href="">Privacy</a>
+                </li>
+                <li>
+                    <a href="">Terms</a>
+                </li>
+                <li>
+                    <a href="">Settings</a>
+                </li>
+            </ul>
+        </div>
+
+
     </div>
 
 </body>
